@@ -1,0 +1,57 @@
+@namespace DraftR.Client.Components.DraftRoom.MessageBoard
+@using Microsoft.AspNetCore.SignalR.Client
+@inject NavigationManager NavigationManager
+
+<h4>Message Board</h4>
+
+<div>
+    <label>
+        User:
+        <input @bind="userInput" />
+    </label>
+</div>
+<div>
+    <label>
+        Message:
+        <input @bind="messageInput" size="50" />
+    </label>
+</div>
+<button @onclick="Send" disabled="@(!IsConnected)">Send</button>
+
+<hr>
+
+<ul>
+    @foreach (var message in messages)
+    {
+        <li>@message</li>
+    }
+</ul>
+
+@code {
+    private HubConnection hub;
+    private List<string> messages = new List<string>();
+    private string userInput;
+    private string messageInput;
+
+    protected override async Task OnInitializedAsync()
+    {
+        hub = new HubConnectionBuilder()
+            .WithUrl(NavigationManager.ToAbsoluteUri("/draft-room"))
+            .Build();
+
+        hub.On<string, string>("ReceiveMessage", (user, message) =>
+        {
+            var encodedMsg = $"{user}: {message}";
+            messages.Add(encodedMsg);
+            StateHasChanged();
+        });
+
+        await hub.StartAsync();
+    }
+
+    Task Send() =>
+        hub.SendAsync("SendMessage", userInput, messageInput);
+
+    public bool IsConnected =>
+        hub.State == HubConnectionState.Connected;
+}

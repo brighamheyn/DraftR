@@ -1,0 +1,38 @@
+﻿@namespace DraftR.Client.Components.DraftRoom.CheatSheet
+@using DraftR.Shared
+@inject HttpClient Http
+
+<h4>Cheat Sheet</h4>
+
+@if (players == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var name in players)
+            {
+                <tr>
+                    <td>@name</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+
+    private string[] players;
+
+    protected override async Task OnInitializedAsync()
+    {
+        players = await Http.GetJsonAsync<string[]>("api/draft/players");
+    }
+}

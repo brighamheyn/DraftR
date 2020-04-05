@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30001.183
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DraftR.Client", "DraftR.Client\DraftR.Client.csproj", "{54500771-8EC9-4BAF-9806-819534639F21}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "DraftR.Server", "DraftR.Server\DraftR.Server.fsproj", "{202A0DE5-E321-448C-A047-152A5F35F189}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "DraftR.Shared", "DraftR.Shared\DraftR.Shared.fsproj", "{50BC0D0A-0520-4B8C-9823-FB0EDB486A91}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54500771-8EC9-4BAF-9806-819534639F21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54500771-8EC9-4BAF-9806-819534639F21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54500771-8EC9-4BAF-9806-819534639F21}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{54500771-8EC9-4BAF-9806-819534639F21}.Debug|x64.Build.0 = Debug|Any CPU
+		{54500771-8EC9-4BAF-9806-819534639F21}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{54500771-8EC9-4BAF-9806-819534639F21}.Debug|x86.Build.0 = Debug|Any CPU
+		{54500771-8EC9-4BAF-9806-819534639F21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54500771-8EC9-4BAF-9806-819534639F21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54500771-8EC9-4BAF-9806-819534639F21}.Release|x64.ActiveCfg = Release|Any CPU
+		{54500771-8EC9-4BAF-9806-819534639F21}.Release|x64.Build.0 = Release|Any CPU
+		{54500771-8EC9-4BAF-9806-819534639F21}.Release|x86.ActiveCfg = Release|Any CPU
+		{54500771-8EC9-4BAF-9806-819534639F21}.Release|x86.Build.0 = Release|Any CPU
+		{202A0DE5-E321-448C-A047-152A5F35F189}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{202A0DE5-E321-448C-A047-152A5F35F189}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{202A0DE5-E321-448C-A047-152A5F35F189}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{202A0DE5-E321-448C-A047-152A5F35F189}.Debug|x64.Build.0 = Debug|Any CPU
+		{202A0DE5-E321-448C-A047-152A5F35F189}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{202A0DE5-E321-448C-A047-152A5F35F189}.Debug|x86.Build.0 = Debug|Any CPU
+		{202A0DE5-E321-448C-A047-152A5F35F189}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{202A0DE5-E321-448C-A047-152A5F35F189}.Release|Any CPU.Build.0 = Release|Any CPU
+		{202A0DE5-E321-448C-A047-152A5F35F189}.Release|x64.ActiveCfg = Release|Any CPU
+		{202A0DE5-E321-448C-A047-152A5F35F189}.Release|x64.Build.0 = Release|Any CPU
+		{202A0DE5-E321-448C-A047-152A5F35F189}.Release|x86.ActiveCfg = Release|Any CPU
+		{202A0DE5-E321-448C-A047-152A5F35F189}.Release|x86.Build.0 = Release|Any CPU
+		{50BC0D0A-0520-4B8C-9823-FB0EDB486A91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50BC0D0A-0520-4B8C-9823-FB0EDB486A91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50BC0D0A-0520-4B8C-9823-FB0EDB486A91}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{50BC0D0A-0520-4B8C-9823-FB0EDB486A91}.Debug|x64.Build.0 = Debug|Any CPU
+		{50BC0D0A-0520-4B8C-9823-FB0EDB486A91}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{50BC0D0A-0520-4B8C-9823-FB0EDB486A91}.Debug|x86.Build.0 = Debug|Any CPU
+		{50BC0D0A-0520-4B8C-9823-FB0EDB486A91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50BC0D0A-0520-4B8C-9823-FB0EDB486A91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50BC0D0A-0520-4B8C-9823-FB0EDB486A91}.Release|x64.ActiveCfg = Release|Any CPU
+		{50BC0D0A-0520-4B8C-9823-FB0EDB486A91}.Release|x64.Build.0 = Release|Any CPU
+		{50BC0D0A-0520-4B8C-9823-FB0EDB486A91}.Release|x86.ActiveCfg = Release|Any CPU
+		{50BC0D0A-0520-4B8C-9823-FB0EDB486A91}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7B38D156-AF74-4619-9A0F-B032051285D9}
+	EndGlobalSection
+EndGlobal
